@@ -218,6 +218,23 @@ namespace Assignment02D03
             Console.WriteLine("Reversed string: " + reversedString);
             #endregion
 
+            #region Q14
+            /*14- Write a program to allow the user to enter int and print the REVERSED of it.*/
+            Console.WriteLine("Enter an integer: ");
+            string input2 = Console.ReadLine();
+            if (int.TryParse(input, out int number12))
+            {
+                string reversedString2 = "";
+                for (int i = input2.Length - 1; i >= 0; i--)
+                {
+                    reversedString2 += input[i];
+                }
+                int reversedNumber2 = int.Parse(reversedString2);
+
+                #endregion
+
+
+            }
         }
     }
 }
