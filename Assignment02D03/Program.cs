@@ -1,4 +1,5 @@
 ﻿using System.Numerics;
+using System.Reflection.Metadata.Ecma335;
 
 namespace Assignment02D03
 {
@@ -171,7 +172,40 @@ namespace Assignment02D03
                     Console.WriteLine("out of range");
                     break;
             }
-        
+
+            #endregion
+
+            #region Q12
+            /*12- Write a program to create a Simple Calculator.*/
+            Console.WriteLine("enter two numbers ");
+            double.TryParse(Console.ReadLine(), out double calcu1);
+            double.TryParse(Console.ReadLine(), out double calcu2);
+            Console.WriteLine("enter your operator 1=+ 2=- 3= * 4 = /");
+            int.TryParse(Console.ReadLine(), out int operat);
+            switch(operat)
+            {
+                case 1:
+                    Console.WriteLine($"sum is {calcu1+calcu2}");
+                    break;
+                case 2:
+                    Console.WriteLine($"intersect is {calcu1 - calcu2}");
+                    break;
+                case 3:
+                    Console.WriteLine($"multi is {calcu1 * calcu2}");
+                    break;
+                case 4:
+                    if (number2 != 0)
+                        Console.WriteLine($"divide is {calcu1 / calcu2}");
+                    else
+                        Console.WriteLine("cnnot divide by 0");
+
+                    break;
+                default:
+                    Console.WriteLine("out of range ");
+                    break;
+            }
+
+
             #endregion
         }
     }
