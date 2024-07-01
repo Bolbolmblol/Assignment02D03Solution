@@ -268,6 +268,30 @@ namespace Assignment02D03
                     }
                 }
                 #endregion
+
+            #region Q16
+                /*. Write a program in C# Sharp to convert a decimal number into binary without using an array.*/
+                Console.WriteLine("Enter a decimal number: ");
+                int decimalNumber = int.Parse(Console.ReadLine());
+
+                string binaryString = "";
+
+                if (decimalNumber == 0)
+                {
+                    binaryString = "0";
+                }
+                else
+                {
+                    while (decimalNumber > 0)
+                    {
+                        int remainder = decimalNumber % 2;
+                        binaryString = remainder + binaryString;
+                        decimalNumber /= 2;
+                    }
+                }
+
+                Console.WriteLine("Binary representation: " + binaryString);
+                #endregion
             }
         }
     }
