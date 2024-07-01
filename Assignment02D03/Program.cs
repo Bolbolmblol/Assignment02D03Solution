@@ -324,6 +324,45 @@ namespace Assignment02D03
                     Console.WriteLine("The points do not lie on a single straight line.");
                 }
                 #endregion
+
+            #region Q18
+                /*Within a company, the efficiency of workers is evaluated based on the duration required to complete a specific task. A worker's efficiency level is determined as follows: 
+                    - If the worker completes the job within 2 to 3 hours, they are considered highly efficient. 
+                    - If the worker takes 3 to 4 hours, they are instructed to increase their speed. 
+                    - If the worker takes 4 to 5 hours, they are provided with training to enhance their speed. 
+                    - If the worker takes more than 5 hours, they are required to leave the company. 
+                    To calculate the efficiency of a worker, the time taken for the task is obtained via user input from the keyboard.
+
+                */
+                Console.WriteLine("Enter the time taken to complete the task (in hours): ");
+                double timeTaken = double.Parse(Console.ReadLine());
+
+                int timeCategory = (int)Math.Ceiling(timeTaken);
+
+                switch (timeCategory)
+                {
+                    case 2:
+                    case 3:
+                        Console.WriteLine("The worker is highly efficient.");
+                        break;
+                    case 4:
+                        Console.WriteLine("The worker needs to increase their speed.");
+                        break;
+                    case 5:
+                        Console.WriteLine("The worker needs training to improve their speed.");
+                        break;
+                    default:
+                        if (timeTaken > 5)
+                        {
+                            Console.WriteLine("The worker has to leave the company.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Invalid input. Time must be at least 2 hours.");
+                        }
+                        break;
+                }
+                #endregion
             }
         }
     }
