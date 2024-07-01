@@ -292,6 +292,38 @@ namespace Assignment02D03
 
                 Console.WriteLine("Binary representation: " + binaryString);
                 #endregion
+
+            #region Q17
+                Console.WriteLine("Enter the coordinates of the first point (x1, y1): ");
+                Console.Write("x1: ");
+                double x1 = double.Parse(Console.ReadLine());
+                Console.Write("y1: ");
+                double y1 = double.Parse(Console.ReadLine());
+
+                Console.WriteLine("Enter the coordinates of the second point (x2, y2): ");
+                Console.Write("x2: ");
+                double x2 = double.Parse(Console.ReadLine());
+                Console.Write("y2: ");
+                double y2 = double.Parse(Console.ReadLine());
+
+                Console.WriteLine("Enter the coordinates of the third point (x3, y3): ");
+                Console.Write("x3: ");
+                double x3 = double.Parse(Console.ReadLine());
+                Console.Write("y3: ");
+                double y3 = double.Parse(Console.ReadLine());
+
+                double slope1 = (y2 - y1) * (x3 - x2);
+                double slope2 = (y3 - y2) * (x2 - x1);
+
+                if (slope1 == slope2)
+                {
+                    Console.WriteLine("The points lie on a single straight line.");
+                }
+                else
+                {
+                    Console.WriteLine("The points do not lie on a single straight line.");
+                }
+                #endregion
             }
         }
     }
