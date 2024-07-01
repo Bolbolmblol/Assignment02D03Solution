@@ -114,6 +114,20 @@ namespace Assignment02D03
                     Console.WriteLine(i);
             }
             #endregion
+
+            #region Q9
+            /*Write a program that takes two integers then prints the power*/
+            Console.WriteLine("enter number");
+            int.TryParse(Console.ReadLine(), out int number10);
+            Console.WriteLine("enter power");
+            int.TryParse (Console.ReadLine() , out int power);
+            int equal = 1;
+            for (int i = 1;i<=power;i++)
+            {
+                equal *= number10;
+            }
+            Console.WriteLine(equal);
+            #endregion
         }
     }
 }
