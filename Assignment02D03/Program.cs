@@ -1,4 +1,6 @@
-﻿namespace Assignment02D03
+﻿using System.Numerics;
+
+namespace Assignment02D03
 {
     internal class Program
     {
@@ -26,6 +28,37 @@
                 Console.WriteLine("positive");
             #endregion
 
+            #region Q3
+            Console.WriteLine("enter three numbers ");
+            int.TryParse(Console.ReadLine(),out int number3);
+            int.TryParse(Console.ReadLine(), out int number4);
+            int.TryParse(Console.ReadLine(), out int number5);
+
+            if(number3>number4 && number3>number5)
+            {
+                Console.WriteLine($"Max is {number3}");
+                if(number4>number5)
+                    Console.WriteLine($"Min is :{number5}");
+                else
+                    Console.WriteLine($"Min is :{number4}");
+            }
+            else if(number4 > number3 && number4 > number5)
+            {
+                Console.WriteLine($"Max is {number4}");
+                if (number3 > number5)
+                    Console.WriteLine($"Min is :{number5}");
+                else
+                    Console.WriteLine($"Min is :{number3}");
+            }
+            else if (number5 > number3 && number5 > number4)
+            {
+                Console.WriteLine($"Max is {number5}");
+                if (number3 > number4)
+                    Console.WriteLine($"Min is :{number4}");
+                else
+                    Console.WriteLine($"Min is :{number3}");
+            }
+            #endregion
         }
     }
 }
