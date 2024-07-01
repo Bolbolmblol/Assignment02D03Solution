@@ -143,6 +143,36 @@ namespace Assignment02D03
             Console.WriteLine($"sum is :  {sum} , average is : {average}  , precentage is:  {precentage}");
 
             #endregion
+
+            #region Q11
+            /*Write a program to input the month number and print the number of days in that month.*/
+            Console.WriteLine("enter number month ");
+            int.TryParse(Console.ReadLine(), out int month);
+            switch(month)
+            { 
+                case 1:
+                case 3:
+                case 5: 
+                case 7:
+                case 9:
+                case 10:
+                case 12:
+                    Console.WriteLine("days is 31");
+                    break;
+                case 2:
+                    Console.WriteLine("days is 29");
+                    break;
+                case 4:
+                case 6:
+                case 8:
+                    Console.WriteLine("days is 30");
+                    break;
+                default:
+                    Console.WriteLine("out of range");
+                    break;
+            }
+        
+            #endregion
         }
     }
 }
