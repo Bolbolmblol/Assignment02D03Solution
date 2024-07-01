@@ -17,7 +17,15 @@
             }
             #endregion
 
-          
+            #region Q2
+            Console.WriteLine("Enter your number");
+            int.TryParse(Console.ReadLine(), out int number2);
+            if (number2 > 0)
+                Console.WriteLine("Negative");
+            else
+                Console.WriteLine("positive");
+            #endregion
+
         }
     }
 }
