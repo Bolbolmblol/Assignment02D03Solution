@@ -103,6 +103,17 @@ namespace Assignment02D03
                 Console.WriteLine($"{number8}*{i}={number8*i}");
             }
             #endregion
+
+            #region Q8
+            /*Write a program that allows to user to insert number then print all even numbers between 1 to this number*/
+            Console.WriteLine("ENTER YOR NUMBER");
+            int.TryParse(Console.ReadLine() , out int number9);
+            for (int i = 1; i <= number9; i++)
+            {
+                if(i%2==0)
+                    Console.WriteLine(i);
+            }
+            #endregion
         }
-}
+    }
 }
