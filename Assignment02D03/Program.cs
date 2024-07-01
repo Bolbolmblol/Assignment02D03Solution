@@ -77,6 +77,17 @@ namespace Assignment02D03
             else
                 Console.WriteLine("consonant");
             #endregion
+
+            #region Q6
+                Console.WriteLine("Enter your number");
+                uint.TryParse(Console.ReadLine() , out uint number7);
+                for (int i = 1; i <=number7; i++)
+                {
+                    Console.WriteLine(i);
+                }
+            #endregion
+
+
         }
     }
 }
