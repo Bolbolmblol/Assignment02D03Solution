@@ -128,6 +128,21 @@ namespace Assignment02D03
             }
             Console.WriteLine(equal);
             #endregion
+
+            #region Q10
+            /*Write a program to enter marks of five subjects and calculate total, average and percentage.*/
+            Console.WriteLine("enter  your five degrees");
+            int.TryParse(Console.ReadLine(),out int degree1);
+            int.TryParse(Console.ReadLine(), out int degree2);
+            int.TryParse(Console.ReadLine(), out int degree3);
+            int.TryParse(Console.ReadLine(), out int degree4);
+            int.TryParse(Console.ReadLine(), out int degree5);
+            int sum=degree1 + degree2+ degree3+degree4+degree5;
+            int average=sum/5;
+            int precentage = sum / 500 * 100;
+            Console.WriteLine($"sum is :  {sum} , average is : {average}  , precentage is:  {precentage}");
+
+            #endregion
         }
     }
 }
